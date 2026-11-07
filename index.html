@@ -17,6 +17,7 @@
     }
 
     * { box-sizing: border-box; }
+
     html {
       scroll-behavior: smooth;
       scroll-padding-top: 90px;
@@ -84,9 +85,7 @@
       font-size: 14px;
     }
 
-    .links a:hover {
-      color: var(--cream);
-    }
+    .links a:hover { color: var(--cream); }
 
     button, .btn {
       background: linear-gradient(120deg, var(--cream), var(--gold));
@@ -163,9 +162,7 @@
       margin-left: 10px;
     }
 
-    section {
-      padding: 75px 0;
-    }
+    section { padding: 75px 0; }
 
     .heading {
       text-align: center;
@@ -202,9 +199,7 @@
       color: var(--cream);
     }
 
-    .card p, .about p {
-      color: var(--muted);
-    }
+    .card p, .about p { color: var(--muted); }
 
     .about {
       display: grid;
@@ -229,7 +224,7 @@
       object-fit: contain;
     }
 
-    /* PHOTO GALLERY */
+    /* REAL PHOTO GALLERY */
 
     .gallery {
       display: grid;
@@ -250,6 +245,11 @@
       width: 100%;
       height: 320px;
       object-fit: cover;
+      transition: transform .3s ease;
+    }
+
+    .gallery figure:hover img {
+      transform: scale(1.04);
     }
 
     .gallery figcaption {
@@ -290,13 +290,9 @@
       font: inherit;
     }
 
-    textarea {
-      min-height: 100px;
-    }
+    textarea { min-height: 100px; }
 
-    .full {
-      grid-column: 1/-1;
-    }
+    .full { grid-column: 1/-1; }
 
     .note {
       font-size: 12px;
@@ -327,29 +323,17 @@
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        min-height: 540px;
-      }
+      .hero { min-height: 540px; }
 
-      section {
-        padding: 55px 0;
-      }
+      section { padding: 55px 0; }
 
-      form {
-        grid-template-columns: 1fr;
-      }
+      form { grid-template-columns: 1fr; }
 
-      .full {
-        grid-column: auto;
-      }
+      .full { grid-column: auto; }
 
-      .outline {
-        margin: 12px 0 0;
-      }
+      .outline { margin: 12px 0 0; }
 
-      .logo {
-        font-size: 21px;
-      }
+      .logo { font-size: 21px; }
 
       .gallery img {
         height: auto;
@@ -364,9 +348,8 @@
 
 <header>
   <nav class="wrap">
-
     <a class="brand" href="#" aria-label="AnandBand home">
-      <img src="anandband-logo[1].png" alt="AnandBand logo">
+      <img src="images/anandband-logo.png" alt="AnandBand logo">
       <span class="logo">ANANDBAND</span>
     </a>
 
@@ -378,19 +361,16 @@
     </div>
 
     <button class="lang" id="lang" type="button">English</button>
-
   </nav>
 </header>
 
 <main>
 
-  <!-- HOME SECTION -->
-
   <section class="hero">
     <div class="wrap">
 
       <img class="hero-logo"
-           src="anandband-logo[1].png"
+           src="images/anandband-logo.png"
            alt="AnandBand">
 
       <div class="eyebrow"
@@ -422,14 +402,9 @@
     </div>
   </section>
 
-  <!-- SHOWS SECTION -->
-
   <section id="shows" class="wrap">
-
     <div class="heading">
-      <small data-hi="हमारी प्रस्तुतियाँ" data-en="OUR PERFORMANCES">
-        हमारी प्रस्तुतियाँ
-      </small>
+      <small data-hi="हमारी प्रस्तुतियाँ" data-en="OUR PERFORMANCES">हमारी प्रस्तुतियाँ</small>
 
       <h2 data-hi="हर मौके के लिए संगीत"
           data-en="Music for Every Occasion">
@@ -443,7 +418,6 @@
     </div>
 
     <div class="cards">
-
       <article class="card">
         <b>♫ <span data-hi="लाइव ऑर्केस्ट्रा" data-en="Live Orchestra">लाइव ऑर्केस्ट्रा</span></b>
         <p data-hi="शादी, समारोह और खास आयोजनों के लिए ऊर्जावान लाइव म्यूज़िक।"
@@ -467,18 +441,14 @@
           आपके इवेंट की थीम और दर्शकों के अनुसार कस्टम म्यूज़िकल प्रोग्राम।
         </p>
       </article>
-
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-
   <section id="about" class="wrap">
-
     <div class="about">
 
       <div class="art">
-        <img src="anandband-logo[1].png" alt="AnandBand logo">
+        <img src="images/anandband-logo.png" alt="AnandBand logo">
       </div>
 
       <div>
@@ -502,17 +472,14 @@
           • आपके कार्यक्रम के अनुसार शो प्लान<br>
           • बुकिंग से पहले सीधी बातचीत
         </p>
-
       </div>
+
     </div>
   </section>
-
-  <!-- PHOTO GALLERY SECTION -->
 
   <section id="gallery" class="wrap">
 
     <div class="heading">
-
       <small>ANANDBAND MOMENTS</small>
 
       <h2 data-hi="हमारे असली शो की झलकियाँ"
@@ -524,77 +491,69 @@
          data-en="Memorable moments from AnandBand events and musical performances.">
         AnandBand के कार्यक्रमों और संगीत से जुड़े यादगार पल।
       </p>
-
     </div>
 
     <div class="gallery">
 
       <figure>
-        <img src="images/anandband-live-event-01.jpg"
+        <img src="images/IMG-20261107-WA0007%5B1%5D.jpg"
              alt="AnandBand live event with performers"
              loading="lazy">
-        <figcaption data-hi="लाइव म्यूज़िकल इवेंट"
-                    data-en="Live Musical Event">
+        <figcaption data-hi="लाइव म्यूज़िकल इवेंट" data-en="Live Musical Event">
           लाइव म्यूज़िकल इवेंट
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-musician-performance-02.jpg"
+        <img src="images/IMG-20261107-WA0010%5B1%5D.jpg"
              alt="Musician with tabla and stage instruments"
              loading="lazy">
-        <figcaption data-hi="संगीत प्रस्तुति"
-                    data-en="Musical Performance">
+        <figcaption data-hi="संगीत प्रस्तुति" data-en="Musical Performance">
           संगीत प्रस्तुति
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-event-moment-03.jpg"
-             alt="Special event and artist moment"
+        <img src="images/IMG-20261107-WA0011%5B1%5D.jpg"
+             alt="Artists at a special event"
              loading="lazy">
-        <figcaption data-hi="खास आयोजन की यादें"
-                    data-en="Special Event Memories">
+        <figcaption data-hi="खास आयोजन की यादें" data-en="Special Event Memories">
           खास आयोजन की यादें
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-stage-event-04.jpg"
-             alt="Artists at a musical event"
+        <img src="images/IMG-20261107-WA0056%5B1%5D.jpg"
+             alt="AnandBand artists with guest"
              loading="lazy">
-        <figcaption data-hi="कलाकारों के साथ यादगार पल"
-                    data-en="Memorable Moments with Artists">
+        <figcaption data-hi="कलाकारों के साथ यादगार पल" data-en="Memorable Moments with Artists">
           कलाकारों के साथ यादगार पल
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-musical-event-05.jpg"
+        <img src="images/IMG-20261107-WA0058%5B1%5D.jpg"
              alt="AnandBand event photograph"
              loading="lazy">
-        <figcaption data-hi="म्यूज़िकल इवेंट"
-                    data-en="Musical Event">
+        <figcaption data-hi="म्यूज़िकल इवेंट" data-en="Musical Event">
           म्यूज़िकल इवेंट
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-live-show-06.jpg"
-             alt="Live show stage and performers"
+        <img src="images/IMG-20261107-WA0060%5B1%5D.jpg"
+             alt="AnandBand live show"
              loading="lazy">
-        <figcaption data-hi="लाइव शो"
-                    data-en="Live Show">
+        <figcaption data-hi="लाइव शो" data-en="Live Show">
           लाइव शो
         </figcaption>
       </figure>
 
       <figure>
-        <img src="images/anandband-event-gallery-07.jpg"
-             alt="AnandBand event photograph"
+        <img src="images/IMG-20261107-WA0061%5B1%5D.jpg"
+             alt="AnandBand memorable event"
              loading="lazy">
-        <figcaption data-hi="AnandBand की यादगार शाम"
-                    data-en="AnandBand Memorable Evening">
+        <figcaption data-hi="AnandBand की यादगार शाम" data-en="AnandBand Memorable Evening">
           AnandBand की यादगार शाम
         </figcaption>
       </figure>
@@ -602,12 +561,9 @@
     </div>
   </section>
 
-  <!-- BOOKING SECTION -->
-
   <section id="booking" class="wrap">
 
     <div class="heading">
-
       <small>PLAN YOUR EVENT</small>
 
       <h2 data-hi="बुकिंग पूछताछ"
@@ -620,11 +576,9 @@
         data-en="Fill in your details. This form currently prepares an enquiry draft only.">
         अपनी जानकारी भरें। यह फॉर्म अभी केवल पूछताछ का ड्राफ्ट तैयार करता है।
       </p>
-
     </div>
 
     <div class="booking">
-
       <form id="form">
 
         <div>
@@ -658,7 +612,6 @@
         </div>
 
         <div class="full">
-
           <button type="submit"
             data-hi="बुकिंग पूछताछ तैयार करें"
             data-en="Prepare Booking Enquiry">
@@ -670,7 +623,6 @@
             data-en="Note: WhatsApp sending can be enabled after the correct contact number is provided.">
             नोट: WhatsApp से संदेश भेजने की सुविधा सही संपर्क नंबर मिलने के बाद जोड़ी जाएगी।
           </div>
-
         </div>
 
       </form>
@@ -684,11 +636,9 @@
 </footer>
 
 <script>
-
   let hi = true;
 
   document.getElementById('lang').addEventListener('click', () => {
-
     hi = !hi;
 
     document.querySelectorAll('[data-hi][data-en]').forEach(el => {
@@ -699,14 +649,12 @@
       hi ? 'English' : 'हिन्दी';
 
     document.documentElement.lang = hi ? 'hi' : 'en';
-
   });
 
   document.getElementById('year').textContent =
     new Date().getFullYear();
 
   document.getElementById('form').addEventListener('submit', event => {
-
     event.preventDefault();
 
     alert(
@@ -714,9 +662,7 @@
         ? 'फॉर्म का ड्राफ्ट तैयार है। WhatsApp से भेजने के लिए संपर्क नंबर जोड़ना बाकी है।'
         : 'Your enquiry draft is ready. A contact number is needed to send it through WhatsApp.'
     );
-
   });
-
 </script>
 
 </body>
